@@ -3,7 +3,7 @@
  * Plugin Name: Amazon Sync Pro for WooCommerce
  * Plugin URI: https://github.com/torooty/wc-amazon-sync
  * Description: Synchronize products, orders, and inventory between WooCommerce and Amazon using SP-API.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Update URI: https://api.webtest24.de/api/v1/plugins/wc-amazon-sync
  * Author: Amazon Sync Pro
  * Author URI: https://github.com/torooty/wc-amazon-sync
@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
 
 // Define plugin constants
 if ( ! defined( 'WC_AMAZON_SYNC_VERSION' ) ) {
-	define( 'WC_AMAZON_SYNC_VERSION', '1.0.4' );
+	define( 'WC_AMAZON_SYNC_VERSION', '1.0.5' );
 }
 
 if ( ! defined( 'WC_AMAZON_SYNC_PLUGIN_FILE' ) ) {

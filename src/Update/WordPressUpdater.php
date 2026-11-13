@@ -49,7 +49,7 @@ class WordPressUpdater {
 	 * @return string
 	 */
 	public static function plugin_basename() {
-		return defined( 'wc_amazon_sync_PLUGIN_BASENAME' ) ? wc_amazon_sync_PLUGIN_BASENAME : 'wc-amazon-sync/wc-amazon-sync.php';
+		return defined( 'WC_AMAZON_SYNC_PLUGIN_BASENAME' ) ? WC_AMAZON_SYNC_PLUGIN_BASENAME : 'wc-amazon-sync/wc-amazon-sync.php';
 	}
 
 	/**
@@ -58,7 +58,11 @@ class WordPressUpdater {
 	 * @return string
 	 */
 	public static function installed_version() {
-		return defined( 'wc_amazon_sync_VERSION' ) ? (string) wc_amazon_sync_VERSION : '0.0.0';
+		if ( defined( 'WC_AMAZON_SYNC_VERSION' ) && WC_AMAZON_SYNC_VERSION !== '' ) {
+			return (string) WC_AMAZON_SYNC_VERSION;
+		}
+		$disk = self::version_on_disk();
+		return $disk !== '' ? $disk : '0.0.0';
 	}
 
 	/**
@@ -70,7 +74,7 @@ class WordPressUpdater {
 		if ( ! function_exists( 'get_plugin_data' ) ) {
 			require_once ABSPATH . 'wp-admin/includes/plugin.php';
 		}
-		$file = defined( 'wc_amazon_sync_PLUGIN_FILE' ) ? wc_amazon_sync_PLUGIN_FILE : '';
+		$file = defined( 'WC_AMAZON_SYNC_PLUGIN_FILE' ) ? WC_AMAZON_SYNC_PLUGIN_FILE : '';
 		if ( $file === '' || ! is_readable( $file ) ) {
 			return self::DEFAULT_UPDATE_URI;
 		}
@@ -661,8 +665,8 @@ class WordPressUpdater {
 					'headers' => array(
 						'Accept'                 => 'application/json',
 						'User-Agent'             => 'WCAmazonSync/' . self::installed_version() . '; ' . home_url( '/' ),
-						'X-wc-amazon-sync-Version' => self::installed_version(),
-						'X-wc-amazon-sync-Site'    => home_url( '/' ),
+						'X-WC-Amazon-Sync-Version' => self::installed_version(),
+						'X-WC-Amazon-Sync-Site'    => home_url( '/' ),
 					),
 				)
 			);
