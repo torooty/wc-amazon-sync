@@ -1,0 +1,219 @@
+/**
+ * Amazon Sync Log Viewer — same style as Kaufland Logs page
+ * BEM: .amz-logviewer
+ * Themes: .amz-theme-light | .amz-theme-dark | .amz-theme-sepia
+ */
+
+:root {
+	--amz-wp-offset: 52px;
+}
+
+.amz-logviewer {
+	--amz-panel: #fff;
+	--amz-border: #c3c4c7;
+	--amz-text: #1d2327;
+	--amz-muted: #646970;
+	--amz-rowHover: rgba(0, 0, 0, 0.02);
+	--amz-accent: #2271b1;
+	--amz-accentHover: #135e96;
+	--amz-radius: 4px;
+	--amz-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	--amz-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	margin: 20px 20px 20px 0;
+	padding: 0;
+	background: transparent;
+}
+
+.amz-logviewer .wrap { margin: 0; }
+
+.amz-logs-content { margin: 20px 0; }
+
+.amz-logviewer.amz-theme-dark {
+	--amz-bg: #1d2327;
+	--amz-panel: #1e293b;
+	background: var(--amz-bg);
+	--amz-border: #334155;
+	--amz-text: #f1f5f9;
+	--amz-muted: #94a3b8;
+	--amz-rowHover: rgba(255, 255, 255, 0.04);
+	--amz-accent: #72aee6;
+	--amz-accentHover: #2271b1;
+	--amz-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.amz-logviewer.amz-theme-dark h1,
+.amz-logviewer.amz-theme-dark .amz-logviewer__toolbar,
+.amz-logviewer.amz-theme-dark .amz-logviewer__toggle-label,
+.amz-logviewer.amz-theme-dark .amz-logviewer__search,
+.amz-logviewer.amz-theme-dark .amz-logviewer__select,
+.amz-logviewer.amz-theme-dark .amz-logviewer__th,
+.amz-logviewer.amz-theme-dark .amz-logviewer__cell,
+.amz-logviewer.amz-theme-dark .amz-logviewer__msgText,
+.amz-logviewer.amz-theme-dark .amz-logviewer__footer,
+.amz-logviewer.amz-theme-dark .amz-logviewer__no-levels,
+.amz-logviewer.amz-theme-dark .amz-logviewer__modalBox h3,
+.amz-logviewer.amz-theme-dark .amz-logviewer__modalPayload,
+.amz-logviewer.amz-theme-dark .amz-logviewer__empty td { color: var(--amz-text); }
+.amz-logviewer.amz-theme-dark .amz-logviewer__toolbar { background: var(--amz-panel); border-bottom-color: var(--amz-border); }
+.amz-logviewer.amz-theme-dark .amz-logviewer__btn--blue { border-color: #72aee6 !important; color: #72aee6 !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__btn--blue:hover { background: #2271b1 !important; border-color: #72aee6 !important; color: #fff !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__btn--red { border-color: #f87171 !important; color: #f87171 !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__btn--red:hover { background: #b32d2e !important; border-color: #f87171 !important; color: #fff !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__theme-btn.amz-logviewer__btn--light { border-color: #64748b !important; color: #94a3b8 !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__theme-btn.amz-logviewer__btn--light.is-active,
+.amz-logviewer.amz-theme-dark .amz-logviewer__theme-btn.amz-logviewer__btn--light:hover { background: #334155 !important; border-color: #64748b !important; color: #f1f5f9 !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__theme-btn.amz-logviewer__btn--dark { border-color: #475569 !important; color: #94a3b8 !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__theme-btn.amz-logviewer__btn--dark.is-active,
+.amz-logviewer.amz-theme-dark .amz-logviewer__theme-btn.amz-logviewer__btn--dark:hover { background: #1e293b !important; border-color: #1e293b !important; color: #fff !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__theme-btn.amz-logviewer__btn--sepia { border-color: #92400e !important; color: #94a3b8 !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__theme-btn.amz-logviewer__btn--sepia.is-active,
+.amz-logviewer.amz-theme-dark .amz-logviewer__theme-btn.amz-logviewer__btn--sepia:hover { background: #334155 !important; border-color: #92400e !important; color: #f1f5f9 !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__toggle-btn--gray { border-color: #64748b !important; color: #94a3b8 !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__toggle-btn--gray.amz-toggle-on,
+.amz-logviewer.amz-theme-dark .amz-logviewer__toggle-btn--gray:has(.amz-logviewer__toggle-input:checked) { background: #475569 !important; border-color: #64748b !important; color: #f1f5f9 !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__btn--small { background: transparent !important; border-color: #72aee6 !important; color: #72aee6 !important; }
+.amz-logviewer.amz-theme-dark .amz-logviewer__btn--small:hover { background: #2271b1 !important; border-color: #72aee6 !important; color: #fff !important; }
+
+.amz-logviewer.amz-theme-sepia {
+	--amz-bg: #f5f0e6;
+	--amz-panel: #faf6ef;
+	background: var(--amz-bg);
+	--amz-border: #e8dfc4;
+	--amz-text: #3d3526;
+	--amz-muted: #6b5d4a;
+	--amz-rowHover: rgba(0, 0, 0, 0.03);
+	--amz-accent: #b45309;
+	--amz-accentHover: #92400e;
+}
+
+.amz-logviewer__inner {
+	flex: 1;
+	min-height: 480px;
+	display: flex;
+	flex-direction: column;
+	background: var(--amz-panel);
+	border-radius: var(--amz-radius);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	border: 1px solid #ccd0d4;
+	overflow: hidden;
+	height: calc(100vh - var(--amz-wp-offset) - 140px);
+}
+
+.amz-logviewer__toolbar {
+	padding: 15px;
+	margin: 20px 0;
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.amz-logviewer__toolbar-row { display: flex; gap: 15px; flex-wrap: wrap; align-items: flex-end; }
+.amz-logviewer__toolbar-row label { display: block; margin-bottom: 5px; }
+.amz-logviewer__toolbar-right { margin-left: auto; display: flex; flex-direction: column; align-items: flex-end; gap: 5px; }
+.amz-logviewer__toolbar-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+
+.amz-logviewer__pills { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.amz-logviewer__pill {
+	padding: 4px 12px; height: 28px; line-height: 1; border-radius: 4px; font-size: 12px; font-weight: 600;
+	cursor: pointer; transition: all 0.15s ease; box-sizing: border-box; width: 92px; min-width: 92px; text-align: center;
+}
+.amz-logviewer__pill--red { border: 1px solid #a00; background: #fff; color: #a00; }
+.amz-logviewer__pill--red:hover, .amz-logviewer__pill--red.is-active { background: #b32d2e; border-color: #8a0a0a; color: #fff; }
+.amz-logviewer__pill--yellow { border: 1px solid #d4a800; background: #fff; color: #d4a800; }
+.amz-logviewer__pill--yellow:hover, .amz-logviewer__pill--yellow.is-active { background: #d4a800; border-color: #b38c00; color: #fff; }
+.amz-logviewer__pill--blue { border: 1px solid #135e96; background: #fff; color: #135e96; }
+.amz-logviewer__pill--blue:hover, .amz-logviewer__pill--blue.is-active { background: #135e96; border-color: #0d3d6a; color: #fff; }
+.amz-logviewer__pill--green { border: 1px solid #2e7d32; background: #fff; color: #2e7d32; }
+.amz-logviewer__pill--green:hover, .amz-logviewer__pill--green.is-active { background: #2e7d32; border-color: #1e5c21; color: #fff; }
+.amz-logviewer__no-levels { font-size: 12px; color: #dc2626; margin-left: 4px; }
+
+.amz-logviewer__search {
+	padding: 6px 10px; border: 1px solid #8c8f94; border-radius: 4px; background: #fff; color: #1d2327;
+	font-size: 14px; width: 250px; box-sizing: border-box;
+}
+.amz-logviewer__search::placeholder { color: #646970; }
+.amz-logviewer__search:focus { outline: none; border-color: #2271b1; box-shadow: 0 0 0 1px #2271b1; }
+
+.amz-logviewer__toggle-btn {
+	display: inline-flex; align-items: center; justify-content: center;
+	width: 92px !important; min-width: 92px !important; height: 28px !important; padding: 0 8px !important;
+	line-height: 26px !important; font-size: 12px !important; font-weight: 600 !important; border-radius: 4px !important;
+	border: 1px solid #8c8f94 !important; background-color: #fff !important; color: #646970 !important;
+	cursor: pointer; transition: all 0.15s; box-sizing: border-box !important;
+}
+.amz-logviewer__toggle-input { position: absolute; opacity: 0; width: 0; height: 0; }
+.amz-logviewer__toggle-btn--gray:has(.amz-logviewer__toggle-input:checked),
+.amz-logviewer__toggle-btn--gray.amz-toggle-on { background-color: #646970 !important; border-color: #50575e !important; color: #fff !important; }
+.amz-logviewer__toggle-btn--gray:has(.amz-logviewer__toggle-input:checked):hover,
+.amz-logviewer__toggle-btn--gray.amz-toggle-on:hover { background-color: #50575e !important; border-color: #3c434a !important; }
+
+.amz-logviewer__select {
+	padding: 6px 10px; border: 1px solid #8c8f94; border-radius: 4px; background: #fff; color: #1d2327;
+	font-size: 14px; width: 200px; box-sizing: border-box;
+}
+
+.amz-logviewer__btn, .amz-logviewer__theme-btn {
+	width: 92px !important; min-width: 92px !important; height: 28px !important; padding: 0 8px !important;
+	line-height: 26px !important; font-size: 12px !important; font-weight: 600 !important; border-radius: 4px !important;
+	border: 1px solid transparent !important; box-sizing: border-box !important; text-align: center !important;
+	cursor: pointer; transition: all 0.15s;
+}
+.amz-logviewer__btn--blue { background-color: #fff !important; border-color: #135e96 !important; color: #135e96 !important; }
+.amz-logviewer__btn--blue:hover { background-color: #135e96 !important; border-color: #0d3d6a !important; color: #fff !important; }
+.amz-logviewer__btn--red { background-color: #fff !important; border-color: #a00 !important; color: #a00 !important; }
+.amz-logviewer__btn--red:hover { background-color: #b32d2e !important; border-color: #8a0a0a !important; color: #fff !important; }
+.amz-logviewer__theme-btn.amz-logviewer__btn--light { background-color: #fff !important; border: 1px solid #c3c4c7 !important; color: #1d2327 !important; }
+.amz-logviewer__theme-btn.amz-logviewer__btn--light:hover, .amz-logviewer__theme-btn.amz-logviewer__btn--light.is-active { background-color: #f0f0f1 !important; border-color: #8c8f94 !important; color: #1d2327 !important; }
+.amz-logviewer__theme-btn.amz-logviewer__btn--dark { background-color: #fff !important; border: 1px solid #1d2327 !important; color: #1d2327 !important; }
+.amz-logviewer__theme-btn.amz-logviewer__btn--dark:hover, .amz-logviewer__theme-btn.amz-logviewer__btn--dark.is-active { background-color: #1d2327 !important; border-color: #1d2327 !important; color: #fff !important; }
+.amz-logviewer__theme-btn.amz-logviewer__btn--sepia { background-color: #fff !important; border: 1px solid #b45309 !important; color: #6b5d4a !important; }
+.amz-logviewer__theme-btn.amz-logviewer__btn--sepia:hover, .amz-logviewer__theme-btn.amz-logviewer__btn--sepia.is-active { background-color: #f5f0e6 !important; border-color: #b45309 !important; color: #3d3526 !important; }
+.amz-logviewer__theme { display: inline-flex; border-radius: 4px; overflow: hidden; }
+.amz-logviewer__theme .amz-logviewer__theme-btn { border-right: 1px solid #c3c4c7 !important; }
+.amz-logviewer__theme .amz-logviewer__theme-btn:last-child { border-right: none !important; }
+.amz-logviewer__btn--small { padding: 4px 12px; height: 26px; font-size: 12px; font-weight: 600; border-color: #135e96 !important; color: #135e96 !important; background: #fff !important; }
+.amz-logviewer__btn--small:hover { background: #135e96 !important; border-color: #0d3d6a !important; color: #fff !important; }
+
+.amz-logviewer__tableWrap { flex: 1; min-height: 0; position: relative; overflow: auto; padding: 15px; margin: 20px 0; }
+.amz-logviewer__tableInner { min-height: 100%; }
+.amz-logviewer__table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.amz-logviewer__table thead { position: sticky; top: 0; z-index: 2; background: var(--amz-panel); border-bottom: 2px solid var(--amz-border); }
+.amz-logviewer__th { padding: 12px 16px; text-align: left; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--amz-muted); }
+.amz-logviewer__th--time { width: 130px; min-width: 130px; }
+.amz-logviewer__th--level { width: 90px; min-width: 90px; }
+.amz-logviewer__th--msg { }
+.amz-logviewer__row { border-bottom: 1px solid var(--amz-border); transition: background 0.1s; }
+.amz-logviewer__row:hover { background: var(--amz-rowHover); }
+.amz-logviewer__row.level-error { background: rgba(220, 38, 38, 0.04); }
+.amz-logviewer__row.level-error:hover { background: rgba(220, 38, 38, 0.08); }
+.amz-logviewer__row[data-db-id] { cursor: pointer; }
+.amz-logviewer__row.amz-hidden { display: none; }
+.amz-logviewer__cell { padding: 10px 16px; vertical-align: top; }
+.amz-logviewer__cell--time { font-family: var(--amz-monospace); font-size: 12px; }
+.amz-logviewer__date, .amz-logviewer__clock { display: block; line-height: 1.4; }
+.amz-logviewer__clock { color: var(--amz-muted); font-size: 11px; }
+.amz-logviewer__badge { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 600; }
+.amz-logviewer__row.level-error .amz-logviewer__badge { background: #dc2626; color: #fff; }
+.amz-logviewer__row.level-warn .amz-logviewer__badge, .amz-logviewer__row.level-warning .amz-logviewer__badge { background: #d97706; color: #fff; }
+.amz-logviewer__row.level-info .amz-logviewer__badge { background: #2563eb; color: #fff; }
+.amz-logviewer__row.level-debug .amz-logviewer__badge { background: #64748b; color: #fff; }
+.amz-logviewer__cell--msg { word-break: break-word; white-space: pre-wrap; line-height: 1.5; font-family: var(--amz-monospace); font-size: 12px; }
+.amz-logviewer__msgText { display: block; }
+.amz-logviewer__msgText.is-collapsed { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.amz-logviewer__msgActions { display: flex; gap: 8px; margin-top: 6px; }
+.amz-logviewer__msgBtn { padding: 2px 8px; border: 1px solid var(--amz-border); border-radius: 4px; background: transparent; color: var(--amz-muted); font-size: 11px; cursor: pointer; transition: all 0.15s; }
+.amz-logviewer__msgBtn:hover { color: var(--amz-accent); border-color: var(--amz-accent); }
+.amz-logviewer__empty { color: var(--amz-muted); }
+.amz-logviewer__empty td { padding: 48px 20px; text-align: center; font-size: 14px; }
+.amz-logviewer__loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 12px; padding: 16px 28px; background: rgba(0, 0, 0, 0.75); color: #fff; border-radius: var(--amz-radius); font-size: 13px; z-index: 5; }
+.amz-logviewer__loading .spinner { margin: 0; float: none; }
+.amz-logviewer__jump { position: absolute; bottom: 16px; right: 16px; padding: 8px 16px; background: var(--amz-accent); color: #fff; border: none; border-radius: 8px; font-size: 12px; font-weight: 500; cursor: pointer; box-shadow: var(--amz-shadow); z-index: 3; transition: background 0.15s; }
+.amz-logviewer__jump:hover { background: var(--amz-accentHover); }
+.amz-logviewer__footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 10px 20px; border-top: 1px solid var(--amz-border); font-size: 12px; color: var(--amz-muted); }
+.amz-logviewer__footerActions { display: flex; gap: 8px; }
+
+@media (max-width: 1024px) {
+	.amz-logviewer__toolbar { flex-direction: column; align-items: stretch; }
+	.amz-logviewer__toolbar-left, .amz-logviewer__toolbar-right { justify-content: flex-start; }
+}

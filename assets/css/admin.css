@@ -1,0 +1,150 @@
+/**
+ * Admin Styles
+ *
+ * @package WCAmazonSync
+ */
+
+.wc-amazon-sync-settings-form,
+.wc-amazon-sync-import,
+.wc-amazon-sync-export,
+.wc-amazon-sync-mapping {
+	margin-top: 20px;
+}
+
+.wc-amazon-sync-settings-form .form-table th {
+	width: 200px;
+}
+
+.status-pending {
+	color: #f56e28;
+	font-weight: 600;
+}
+
+.status-syncing {
+	color: #2271b1;
+	font-weight: 600;
+}
+
+.status-synced {
+	color: #00a32a;
+	font-weight: 600;
+}
+
+.status-error {
+	color: #d63638;
+	font-weight: 600;
+}
+
+#amazon-products-list {
+	margin-top: 20px;
+}
+
+#amazon-products-tbody tr {
+	cursor: pointer;
+}
+
+#amazon-products-tbody tr:hover {
+	background-color: #f6f7f7;
+}
+
+/* Progress overlay */
+#amazon-sync-progress-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.amazon-sync-progress-content {
+	background: #fff;
+	padding: 30px 40px;
+	border-radius: 8px;
+	text-align: center;
+	min-width: 400px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.amazon-sync-progress-content h3 {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+
+.amazon-sync-progress-content p {
+	margin: 10px 0;
+}
+
+.amazon-sync-progress-bar {
+	width: 100%;
+	height: 24px;
+	background-color: #f0f0f1;
+	border-radius: 12px;
+	overflow: hidden;
+	margin: 20px 0;
+	position: relative;
+}
+
+#amazon-sync-progress-fill {
+	height: 100%;
+	background: linear-gradient(90deg, #2271b1, #135e96);
+	transition: width 0.3s ease;
+	border-radius: 12px;
+}
+
+#amazon-sync-progress-percent {
+	font-size: 16px;
+	font-weight: 600;
+	color: #2271b1;
+	margin-top: 10px;
+}
+
+#amazon-sync-progress-text {
+	color: #50575e;
+	font-size: 14px;
+}
+
+/* Progress overlay for saving mappings */
+#amazon-sync-save-progress-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#amazon-sync-save-progress-fill {
+	height: 100%;
+	background: linear-gradient(90deg, #2271b1, #135e96);
+	transition: width 0.3s ease;
+	border-radius: 12px;
+}
+
+#amazon-sync-save-progress-percent {
+	font-size: 16px;
+	font-weight: 600;
+	color: #2271b1;
+	margin-top: 10px;
+}
+
+#amazon-sync-save-progress-text {
+	color: #50575e;
+	font-size: 14px;
+}
+
+#amazon-sync-save-progress-details {
+	color: #646970;
+	font-size: 13px;
+	margin-top: 5px;
+}
+

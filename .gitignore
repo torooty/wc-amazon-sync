@@ -1,0 +1,65 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Environment & secrets (never commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+auth.json
+*.secret
+
+# Logs & runtime
+*.log
+logs/
+log/
+debug.log
+error_log
+
+# Local / temp / build artifacts
+tmp/
+temp/
+cache/
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Local install archives (plugin ZIPs built for deployment)
+*.zip
+dist/
+build/
+releases/
+*.tar.gz
+*.tgz
+
+# Composer / Node (if added later)
+/vendor/
+/node_modules/
+npm-debug.log*
+yarn-error.log*
+composer.lock.bak
+
+# PHPUnit / coverage
+.phpunit.result.cache
+phpunit.xml.bak
+coverage/
+.phpunit.cache/
+
+# Local scratch / notes
+test22.txt
+*.local.php
+local-config.php

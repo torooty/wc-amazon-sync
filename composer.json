@@ -1,0 +1,25 @@
+{
+    "name": "wc-amazon-sync/amazon-sync-pro",
+    "description": "WooCommerce plugin for Amazon SP-API integration",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Amazon Sync Pro",
+            "email": "support@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "WCAmazonSync\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
+

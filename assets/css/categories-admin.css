@@ -1,0 +1,84 @@
+/* Amazon Sync — Categories page (Kategorie-Zuordnung, same style as Kaufland) */
+
+.wc-amazon-sync-categories {
+	margin-top: 10px;
+}
+
+.wc-amazon-sync-categories .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.wc-amazon-sync-categories .wp-list-table {
+	margin-top: 10px;
+}
+
+/* Table: wider Amazon category column, readable font (Amazon-style) */
+.wc-amazon-sync-categories-table {
+	table-layout: fixed;
+}
+
+.wc-amazon-sync-categories-table .col-woo-cat {
+	width: 200px;
+}
+
+.wc-amazon-sync-categories-table .col-amazon-cat {
+	width: 52%;
+	min-width: 420px;
+	vertical-align: middle;
+	background: #fafafa;
+}
+
+.wc-amazon-sync-categories-table .col-status {
+	width: 120px;
+}
+
+.wc-amazon-sync-categories-table .col-actions {
+	width: 140px;
+}
+
+/* Amazon category cell: larger font, path-style readability (Select2 / SelectWoo) */
+.wc-amazon-sync-categories-table .col-amazon-cat .wc-amazon-sync-default-category-select,
+.wc-amazon-sync-categories-table .col-amazon-cat .select2-container .select2-selection__rendered,
+.wc-amazon-sync-categories-table .col-amazon-cat .select2-container .selection .select2-selection__rendered {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #1a1a1a;
+}
+
+.wc-amazon-sync-categories-table .col-amazon-cat .select2-container {
+	min-height: 36px;
+}
+
+.wc-amazon-sync-categories-table .col-amazon-cat .select2-container--default .select2-selection--single,
+.wc-amazon-sync-categories-table .col-amazon-cat .select2-container .select2-selection--single {
+	min-height: 36px;
+	padding: 6px 10px;
+	border-radius: 4px;
+	border-color: #8c8f94;
+}
+
+.wc-amazon-sync-categories-table .col-amazon-cat .select2-container--default .select2-selection__rendered,
+.wc-amazon-sync-categories-table .col-amazon-cat .select2-container .select2-selection__rendered {
+	padding-left: 0;
+	line-height: 1.5;
+}
+
+/* Select2/SelectWoo dropdown: larger options */
+.wc-amazon-sync-categories-table .col-amazon-cat .select2-results__option {
+	font-size: 13px;
+	line-height: 1.5;
+	padding: 8px 10px;
+}
+
+.wc-amazon-sync-categories-table .col-amazon-cat .select2-results__option--highlighted {
+	background: #e5f5fa;
+	color: #1a1a1a;
+}
+
+.wc-amazon-sync-categories .wp-list-table select {
+	max-width: 100%;
+}
+
+.wc-amazon-sync-categories .notice {
+	margin: 15px 0;
+}

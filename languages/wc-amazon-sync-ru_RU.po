@@ -1,0 +1,311 @@
+# Russian translation for Amazon Sync Pro for WooCommerce
+# Copyright (C) 2024 Amazon Sync Pro
+msgid ""
+msgstr ""
+"Project-Id-Version: Amazon Sync Pro for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: Settings page
+msgid "Amazon Sync"
+msgstr "Синхронизация Amazon"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Import Products"
+msgstr "Импорт товаров"
+
+msgid "Export Products"
+msgstr "Экспорт товаров"
+
+msgid "Product Mapping"
+msgstr "Сопоставление товаров"
+
+#: Settings tabs
+msgid "Amazon API"
+msgstr "Amazon API"
+
+msgid "Synchronization"
+msgstr "Синхронизация"
+
+msgid "Interface / Language"
+msgstr "Интерфейс / Язык"
+
+#: API settings
+msgid "Region"
+msgstr "Регион"
+
+msgid "Seller ID"
+msgstr "Seller ID"
+
+msgid "Marketplace ID"
+msgstr "Marketplace ID"
+
+msgid "Client ID (LWA)"
+msgstr "Client ID (LWA)"
+
+msgid "Client Secret (LWA)"
+msgstr "Client Secret (LWA)"
+
+msgid "Refresh Token"
+msgstr "Refresh Token"
+
+msgid "Use Sandbox"
+msgstr "Использовать Sandbox"
+
+msgid "Test Connection"
+msgstr "Проверить соединение"
+
+#: Messages
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+msgid "Connection successful!"
+msgstr "Соединение успешно!"
+
+msgid "Connection failed."
+msgstr "Соединение не удалось."
+
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+msgid "Plugin Language"
+msgstr "Язык плагина"
+
+msgid "Force Language"
+msgstr "Принудительный язык"
+
+msgid "Auto (use site language)"
+msgstr "Авто (использовать язык сайта)"
+
+msgid "English"
+msgstr "Английский"
+
+msgid "Deutsch"
+msgstr "Немецкий"
+
+msgid "Русский"
+msgstr "Русский"
+
+msgid "Language for the plugin interface."
+msgstr "Язык интерфейса плагина."
+
+msgid "Force the selected language regardless of site language settings."
+msgstr "Принудительно использовать выбранный язык независимо от настроек языка сайта."
+
+msgid "Select your Amazon SP-API region."
+msgstr "Выберите регион Amazon SP-API."
+
+msgid "Your Amazon Seller ID."
+msgstr "Ваш Amazon Seller ID."
+
+msgid "Your Amazon Seller ID (Merchant Token)."
+msgstr "Ваш Amazon Seller ID (Merchant Token)."
+
+msgid "Can be found in Seller Central: Settings > Account Info > Merchant Token. For some SP-API operations this may be optional - you can leave it empty and it will be retrieved from your credentials automatically."
+msgstr "Можно найти в Seller Central: Settings > Account Info > Merchant Token. Для некоторых операций SP-API это может быть необязательно - можно оставить пустым, и оно будет получено автоматически из ваших учетных данных."
+
+msgid "Your Amazon Marketplace ID (e.g., A1PA6795UKMFR9 for Germany)."
+msgstr "Ваш Amazon Marketplace ID (например, A1PA6795UKMFR9 для Германии)."
+
+msgid "Login with Amazon (LWA) Client ID."
+msgstr "Login with Amazon (LWA) Client ID."
+
+msgid "Login with Amazon (LWA) Client Secret."
+msgstr "Login with Amazon (LWA) Client Secret."
+
+msgid "Amazon SP-API Refresh Token."
+msgstr "Amazon SP-API Refresh Token."
+
+msgid "Use Amazon SP-API sandbox environment for testing."
+msgstr "Использовать песочницу Amazon SP-API для тестирования."
+
+msgid "API settings saved successfully."
+msgstr "Настройки API успешно сохранены."
+
+msgid "UI settings saved successfully."
+msgstr "Настройки интерфейса успешно сохранены."
+
+msgid "Default Mapping Type"
+msgstr "Тип сопоставления по умолчанию"
+
+msgid "Default method for mapping WooCommerce products to Amazon products."
+msgstr "Метод по умолчанию для сопоставления товаров WooCommerce с товарами Amazon."
+
+msgid "Custom Field Name"
+msgstr "Имя пользовательского поля"
+
+msgid "Custom meta field name to use for mapping (e.g., _ean, _amazon_asin)."
+msgstr "Имя пользовательского мета-поля для сопоставления (например, _ean, _amazon_asin)."
+
+msgid "Inventory Sync Direction"
+msgstr "Направление синхронизации остатков"
+
+msgid "Direction of inventory synchronization."
+msgstr "Направление синхронизации остатков."
+
+msgid "WooCommerce → Amazon"
+msgstr "WooCommerce → Amazon"
+
+msgid "Amazon → WooCommerce"
+msgstr "Amazon → WooCommerce"
+
+msgid "Bidirectional"
+msgstr "Двусторонняя"
+
+msgid "Sync Frequency"
+msgstr "Частота синхронизации"
+
+msgid "How often to run background synchronization (minimum 300 seconds)."
+msgstr "Как часто запускать фоновую синхронизацию (минимум 300 секунд)."
+
+msgid "seconds"
+msgstr "секунд"
+
+msgid "Auto Sync on Save"
+msgstr "Автосинхронизация при сохранении"
+
+msgid "Automatically sync changes to Amazon when a product is saved in WooCommerce."
+msgstr "Автоматически синхронизировать изменения с Amazon при сохранении товара в WooCommerce."
+
+msgid "Synchronize All Now"
+msgstr "Синхронизировать всё сейчас"
+
+msgid "Sync settings saved successfully."
+msgstr "Настройки синхронизации успешно сохранены."
+
+msgid "Mapping settings saved successfully."
+msgstr "Настройки сопоставления успешно сохранены."
+
+msgid "SKU"
+msgstr "SKU"
+
+msgid "ASIN"
+msgstr "ASIN"
+
+msgid "EAN"
+msgstr "EAN"
+
+msgid "Custom Field"
+msgstr "Пользовательское поле"
+
+msgid "Manage product mappings between WooCommerce and Amazon. Edit prices and update inventory manually."
+msgstr "Управление сопоставлениями товаров между WooCommerce и Amazon. Редактирование цен и ручное обновление остатков."
+
+msgid "Delete All Mappings"
+msgstr "Удалить все связи"
+
+msgid "Update All Inventory"
+msgstr "Обновить все остатки"
+
+msgid "Price (Amazon)"
+msgstr "Цена (Amazon)"
+
+msgid "Update"
+msgstr "Обновить"
+
+msgid "No product mappings found."
+msgstr "Сопоставления товаров не найдены."
+
+msgid "Price updated successfully on Amazon."
+msgstr "Цена успешно обновлена на Amazon."
+
+msgid "Invalid product ID or price."
+msgstr "Неверный ID товара или цена."
+
+msgid "Inventory updated successfully on Amazon."
+msgstr "Остатки успешно обновлены на Amazon."
+
+msgid "Invalid product ID."
+msgstr "Неверный ID товара."
+
+msgid "Inventory update completed: %1$d succeeded, %2$d failed."
+msgstr "Обновление остатков завершено: %1$d успешно, %2$d ошибок."
+
+msgid "All mappings deleted successfully (%d items)."
+msgstr "Все связи успешно удалены (%d элементов)."
+
+msgid "Failed to delete all mappings."
+msgstr "Не удалось удалить все связи."
+
+msgid "Product is not mapped to Amazon."
+msgstr "Товар не сопоставлен с Amazon."
+
+msgid "Updated price for product %1$d on Amazon (ASIN: %2$s, Price: %3$.2f %4$s)"
+msgstr "Обновлена цена товара %1$d на Amazon (ASIN: %2$s, Цена: %3$.2f %4$s)"
+
+msgid "Updated inventory for product %1$d on Amazon (ASIN: %2$s, Quantity: %3$d)"
+msgstr "Обновлены остатки товара %1$d на Amazon (ASIN: %2$s, Количество: %3$d)"
+
+msgid "Product %d: %s"
+msgstr "Товар %d: %s"
+
+msgid "Select product..."
+msgstr "Выбрать товар..."
+
+msgid "Create New"
+msgstr "Создать новый"
+
+msgid "SKU is required."
+msgstr "SKU обязателен."
+
+msgid "No mappings provided."
+msgstr "Сопоставления не предоставлены."
+
+msgid "Invalid mapping data."
+msgstr "Неверные данные сопоставления."
+
+msgid "Mappings saved: %1$d succeeded, %2$d failed."
+msgstr "Сопоставления сохранены: %1$d успешно, %2$d ошибок."
+
+msgid "No products found"
+msgstr "Товары не найдены"
+
+msgid "Searching..."
+msgstr "Поиск..."
+
+msgid "Please enter more characters"
+msgstr "Введите больше символов"
+
+msgid "Automatic Product Matching"
+msgstr "Автоматическое сопоставление товаров"
+
+msgid "Searching for matching products..."
+msgstr "Поиск соответствующих товаров..."
+
+msgid "Processed: %1$d / %2$d | Matched: %3$d | Not found: %4$d"
+msgstr "Обработано: %1$d / %2$d | Найдено: %3$d | Не найдено: %4$d"
+
+msgid "Automatic matching complete! Matched: %1$d, Not found: %2$d"
+msgstr "Автоматическое сопоставление завершено! Найдено: %1$d, Не найдено: %2$d"
+
+msgid "Saving Mappings"
+msgstr "Сохранение маппинга"
+
+msgid "Saving product mappings..."
+msgstr "Сохранение маппинга товаров..."
+
+msgid "Processing..."
+msgstr "Обработка..."
+
+msgid "Saving mappings: {processed} of {total}"
+msgstr "Сохранение маппинга: {processed} из {total}"
+
+msgid "Succeeded"
+msgstr "Успешно"
+
+msgid "Failed"
+msgstr "Ошибка"
+
+msgid "Mappings saved"
+msgstr "Маппинг сохранен"
+

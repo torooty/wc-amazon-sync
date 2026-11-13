@@ -1,0 +1,82 @@
+# Copyright (C) 2024 Amazon Sync Pro
+# This file is distributed under the same license as the Amazon Sync Pro for WooCommerce plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Amazon Sync Pro for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Settings page
+msgid "Amazon Sync"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Import Products"
+msgstr ""
+
+msgid "Export Products"
+msgstr ""
+
+msgid "Product Mapping"
+msgstr ""
+
+#: Settings tabs
+msgid "Amazon API"
+msgstr ""
+
+msgid "Product Mapping"
+msgstr ""
+
+msgid "Synchronization"
+msgstr ""
+
+msgid "Interface / Language"
+msgstr ""
+
+#: API settings
+msgid "Region"
+msgstr ""
+
+msgid "Seller ID"
+msgstr ""
+
+msgid "Marketplace ID"
+msgstr ""
+
+msgid "Client ID (LWA)"
+msgstr ""
+
+msgid "Client Secret (LWA)"
+msgstr ""
+
+msgid "Refresh Token"
+msgstr ""
+
+msgid "Use Sandbox"
+msgstr ""
+
+msgid "Test Connection"
+msgstr ""
+
+#: Messages
+msgid "Settings saved."
+msgstr ""
+
+msgid "Connection successful!"
+msgstr ""
+
+msgid "Connection failed."
+msgstr ""
+
+msgid "Save Changes"
+msgstr ""
+
